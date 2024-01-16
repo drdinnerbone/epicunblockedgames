@@ -1,3 +1,3 @@
 ***EPIC UNBLOCKED GAMES***
 
-go to `https://github.com/drdinnerbone/epicunblockedgames` to play the games :)
+go to `https://drdinnerbone.github.io/epicunblockedgames` to play the games :)
