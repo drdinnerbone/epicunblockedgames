@@ -1,64 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Epic Unblocked Games</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epic Unblocked Games</title>
 
-	<meta name="Author" content="You Know Who">
-	<meta name="Keywords" content="The most epic rickroll of all time">
-	<meta name="Description" content="Get Rickrolled">
+    <meta name="Author" content="You Know Who">
+    <meta name="Keywords" content="The most epic rickroll of all time">
+    <meta name="Description" content="Get Rickrolled">
 
-	<meta property=og:type content=website>
-	<meta property=og:title content="Epic Rickroll">
-	<meta property=og:description content="Get Rickrolled">
-	<meta property=og:image:width content=256>
-	<meta property=og:image:height content=256>
-	<meta property=og:image:alt content=Rickroll>
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Epic Rickroll">
+    <meta property="og:description" content="Get Rickrolled">
+    <meta property="og:image:width" content="256">
+    <meta property="og:image:height" content="256">
+    <meta property="og:image:alt" content="Rickroll">
 
-	<link rel="stylesheet" href="styles/styles.css">
-	<script src="scripts/you.js">
-	</script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/you.js"></script>
 </head>
 
 <body>
-  Click me to exit and go to the actual page
-	<div class="idiot-container">
-		<div class="info-container">
-      <img class="speaker" id="youare-micon" src="images/speakerm.png">
-		</div>
-		<!--
-			<video src="media/youare.mp4" type="video/mp4" id="youare-video" autoplay loop />
-		</div>	
-	-->
-	<audio id="youare-audio" loop>
-    <source src="videos/youare.mp3" type="audio/mp3">
-</audio>
+    <div class="idiot-container">
+        <div class="info-container">
+            <img class="speaker" id="youare-micon" src="images/speakerm.png">
+        </div>
 
-<button onclick="playAudio()">Find Epic Unblocked Games</button>
+        <video src="videos/youare.mp4" type="video/mp4" id="youare-video" autoplay loop controls></video>
 
-<script>
-    function playAudio() {
-        var audio = document.getElementById('youare-audio');
-        audio.play();
-    }
-</script>
+        <audio id="youare-audio" loop>
+            <source src="videos/youare.mp3" type="audio/mp3">
+        </audio>
 
+        <br/>
+        <div class="center" id="lol-content" style="display: none;">
+            <div align="center"><i><b>Click meeeeeeeeeeeeeeeeeeeeeeeeee</b></i></div>
+        </div>
 
+        <button onclick="playAudio()">Find Epic Unblocked Games</button>
 
-		<br/>
-			<div class=center>
-				<div align="center"><i><b>Click meeeeeeeeeeeeeeeeeeeeeeeeee</b></i></div>
+        <script>
+            var elem = document.documentElement;
+            function openFullscreen() {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen();
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                } else if (elem.msRequestFullscreen) {
+                    elem.msRequestFullscreen();
+                }
+            }
+
+            // Wait for the video to start playing
+            document.getElementById('youare-video').addEventListener('playing', function () {
+                // Show the content in lol-content
+                document.getElementById('lol-content').style.display = 'block';
+            });
+
+            function playAudio() {
+                var audio = document.getElementById('youare-audio');
+                audio.play();
+            }
+        </script>
     </div>
-    <script>
-var elem = document.documentElement;
-function openFullscreen() {
-  if (elem.requestFullscreen) {
-    elem.requestFullscreen();
-  } else if (elem.webkitRequestFullscreen) {
-    elem.webkitRequestFullscreen();
-  } else if (elem.msRequestFullscreen) {
-    elem.msRequestFullscreen();
-  }
-}
-</script>
-	</body>
+</body>
 </html>
