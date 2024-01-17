@@ -29,9 +29,20 @@
 			<video src="media/youare.mp4" type="video/mp4" id="youare-video" autoplay loop />
 		</div>	
 	-->
-	<video id="youare-video" loop autoplay>
- 		<source src="videos/youare.mp4" type="video/mp4">
-	</video>
+	<audio id="youare-audio" loop>
+    <source src="videos/youare.mp3" type="audio/mp3">
+</audio>
+
+<button onclick="playAudio()">Find Epic Unblocked Games</button>
+
+<script>
+    function playAudio() {
+        var audio = document.getElementById('youare-audio');
+        audio.play();
+    }
+</script>
+
+
 
 		<br/>
 			<div class=center>
